@@ -1,0 +1,15 @@
+group 'org.willemsens'
+version '0.1'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'javax.mail', name: 'javax.mail-api', version: '1.6.0'
+    compile group: 'javax.mail', name: 'mail', version: '1.4.7'
+}
