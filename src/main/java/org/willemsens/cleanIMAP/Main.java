@@ -15,17 +15,27 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        final Scanner scanner = new Scanner(System.in);
-        System.out.print("Email:    ");
-        final String email = scanner.nextLine();
-        System.out.print("Password: ");
-        final String password = scanner.nextLine();
+        final String email;
+        final String password;
+        if (args.length == 2) {
+            email = args[0];
+            password = args[1];
+        } else if (args.length == 0) {
+            final Scanner scanner = new Scanner(System.in);
+            System.out.print("Email:    ");
+            email = scanner.nextLine();
+            System.out.print("Password: ");
+            password = scanner.nextLine();
+        } else {
+            throw new Exception("Usage: cleanIMAP <email> <password>");
+        }
+        
         final Session session = Session.getDefaultInstance(new Properties());
         final Store store = session.getStore("imaps");
         store.connect("imap.one.com", 993, email, password);
 
         final Folder inbox = store.getFolder("INBOX.Drafts");
-        inbox.open(Folder.READ_ONLY);
+        inbox.open(Folder.READ_WRITE);
 
         final Message[] messages = inbox.search(new FlagTerm(new Flags(Flags.Flag.SEEN), true));
 
