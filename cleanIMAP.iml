@@ -16,13 +16,13 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.mail:javax.mail-api:1.6.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.mail:mail:1.4.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.sun.mail:javax.mail:1.6.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: javax.mail:javax.mail-api:1.6.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: javax.mail:mail:1.4.7" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.sun.mail:javax.mail:1.6.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.mail:javax.mail-api:1.6.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: javax.mail:mail:1.4.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.sun.mail:javax.mail:1.6.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.activation:activation:1.1" level="project" />
   </component>
 </module>
